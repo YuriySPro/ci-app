@@ -11,6 +11,7 @@ jobs:
       matrix:
         node-version: [18.x]
     steps:
+      - uses: hexlet-components/hello-from-hexlet-action
       - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
